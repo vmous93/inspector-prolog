@@ -26,3 +26,18 @@ We also took some time to prepare for our presentation and create a Gantt diagra
 </div>
 
 For next week, we will work on narrowing down our list of clues and scenarios and choosing the ones that are most relevant and feasible for implementation in Prolog. We will also begin to learn Prolog programming and work on structure of the game.
+
+
+### (2nd Week) 14.03.2023
+Zahra Jaleh
+
+In the second week of our Murder Mystery Project in Prolog Programming, we focused on learning how to program in Prolog and becoming familiar with the Swish environment. We used the resource "The Power of Prolog" by Markus Triska, which proved to be an excellent reference in understanding the language and syntax of Prolog. We learned how to write facts and basic rules that would help our program determine who the murderer is in our murder mystery game. We also learned how to interact with users by allowing them to make guesses and comparing their answers to the correct ones.
+
+As we began to develop our program, we realized that we needed to find a way to constrain the clues step by step to make the game more engaging and challenging. We plan to consult the following resources to further our understanding of how to write constraints and rules for puzzle games in Prolog:
+
+1. "Learn Prolog Now!" by Patrick Blackburn, Johan Bos, and Kristina Striegnitz
+2. "The Art of Prolog" by Leon Sterling and Ehud Shapiro
+3. "Constraining Prolog Clauses for Puzzles" by William F. Clocksin
+4. "Puzzles in Prolog" by James F. Allen
+
+By studying these resources and experimenting with different approaches, we hope to find a method for constraining clues step by step in Prolog. Overall, we are excited about the progress we have made so far and look forward to continuing our work next week.
