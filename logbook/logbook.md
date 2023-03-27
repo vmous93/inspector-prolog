@@ -41,3 +41,15 @@ As we began to develop our program, we realized that we needed to find a way to 
 4. "Puzzles in Prolog" by James F. Allen
 
 By studying these resources and experimenting with different approaches, we hope to find a method for constraining clues step by step in Prolog. Overall, we are excited about the progress we have made so far and look forward to continuing our work next week.
+
+
+### (3rd Week) 21.03.2023
+**Vahid Mousavinezhad**
+
+This week, We continued to work on our Prolog program for a murder mystery game. We made much progress in defining the game elements and creating the rules for solving the murder.
+
+To begin, we declared the possible suspects, murder weapons, crime scenes, motives, and days. Next, we defined relationships between these elements using the "related" predicate, which established the links between the "suspects", "weapons", "scenes", "motives", and "days". Using these relationships, we defined the solve_murder predicate, which checks if the inputted Suspect, Weapon, Scene, Motive, and Day match with the relationships established earlier. This will be used to determine whether the user has correctly solved the murder mystery.
+
+Finally, we created the "start_game/0" predicate, which initiates the game by prompting the user to input the murder weapon, crime scene, motive, and day. Once the user has inputted their guesses, the "solve_murder" predicate is called to check whether the user's answers are correct. If so, the game ends and the user is congratulated.
+
+For next week, We are looking forward to continuing to develop this game and exploring more ways to make it even more engaging and challenging. We are considering implementing our program recursively, which will enable the game to follow the clues and scenarios presented to the user. This recursive approach will add complexity to the game, making it even more educational.
