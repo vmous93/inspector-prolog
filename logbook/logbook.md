@@ -29,7 +29,7 @@ For next week, we will work on narrowing down our list of clues and scenarios an
 
 
 ### (2nd Week) 14.03.2023
-Zahra Jaleh
+**Zahra Jaleh**
 
 In the second week of our Murder Mystery Project in Prolog Programming, we focused on learning how to program in Prolog and becoming familiar with the Swish environment. We used the resource "The Power of Prolog" by Markus Triska, which proved to be an excellent reference in understanding the language and syntax of Prolog. We learned how to write facts and basic rules that would help our program determine who the murderer is in our murder mystery game. We also learned how to interact with users by allowing them to make guesses and comparing their answers to the correct ones.
 
@@ -58,8 +58,28 @@ For next week, We are looking forward to continuing to develop this game and exp
 ### (4th Week) 28.03.2023
 **Vahid Mousavinezhad**
 
-This week, we made an effort to replace our previous approach with a new method. Specifically, we aimed to transform our program from a fact-based system to one that utilizes logical inference. We realized that our initial version did not meet our expectations, and this may be due to the fact that the necessary conditions for building our game were not addressed in the initial explanation.
+This week, we made an effort to replace our previous approach with a new method. Specifically, we aimed to transform our program from a fact-based system to one that utilizes logical inference. We realized that our initial version did not meet the expectations, and this may be due to the fact that the necessary conditions for building our game were not addressed in the initial explanation.
 
 To gain inspiration and ideas for solving puzzles in Prolog, we have been exploring existing examples of puzzle-solving in the language. This has helped us gain a deeper understanding of how to apply logical inference to our game and has given us new ideas on how to create a more challenging and engaging experience for players.
 
 By doing so, we hope to present a better approach in the upcoming week. We are committed to improving our Murder Mystery Project in Prolog Programming and look forward to overcoming any obstacles along the way.
+
+
+### (5th Week) 04.04.2023
+**Zahra Jaleh**
+
+This week, we continued our exploration of different examples to gain a better understanding of how to move our game towards logical inference, allowing the Prolog program to use the defined facts and rules to identify the murderer.
+
+In addition, we brainstormed an idea for user engagement that would make the game even more exciting and challenging for the user, encouraging them to test their knowledge of Prolog and their understanding of the existing clues to arrive at the correct answers.
+
+<div style="align-items:center">
+        <figure>
+            <img src="logbook/images/user1.png" alt="alt text" width="" height="100" align="Center">
+            <figcaption>Fig2. A demo of the interactive part of the game with the user.</figcaption>
+        </figure>
+</div>
+
+Our game has interactions with users and uses Prolog to check user inputs against actual scripts to determine the correctness of their answers. Each correct answer counts as a point for players.
+
+Our hope is that these changes will meet our expectations and that we can further improve our program by developing more complex and longer scenarios for different levels of difficulty, showcasing the power of Prolog in logical inference. We believe that this will help us to create a more engaging and immersive experience for the user and allow them to truly appreciate the capabilities of Prolog in solving puzzles.
+
