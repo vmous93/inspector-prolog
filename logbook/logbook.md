@@ -83,3 +83,22 @@ Our game has interactions with users and uses Prolog to check user inputs agains
 
 Our hope is that these changes will meet our expectations and that we can further improve our program by developing more complex and longer scenarios for different levels of difficulty, showcasing the power of Prolog in logical inference. We believe that this will help us to create a more engaging and immersive experience for the user and allow them to truly appreciate the capabilities of Prolog in solving puzzles.
 
+
+### (6th Week) 11.04.2023
+**Zahra Jaleh**
+
+During this week, we continued to work on improving our knowledge of the Prolog programming language and were able to achieve good results. To narrow down and eliminate suspects until we reach the main culprit based on facts and rules, we use operand negation /+.
+
+Prolog uses a backward-chaining algorithm to search through its database of facts and rules to determine the answer to the queries. The negation operand is important in Prolog because it allows for non-monotonic reasoning, which is the ability to draw conclusions that can be invalidated by new information. By allowing for negation, Prolog can reason with incomplete or uncertain information, making it a powerful tool for solving puzzles.
+
+Furthermore, based on feedback from Prof. Buchs and Dr. Morard regarding the interaction part with the user, we provide input data to the program in the form of multiple choices or single-word due to syntax limitations in the Prolog. We need more time to determine the best method.
+
+<div style="align-items:center">
+        <figure>
+            <img src="logbook/images/p2.png" alt="alt text" width="" height="150" align="Center">
+            <figcaption>Fig3. A slide from the presentation2 which describes the defenition of rules in the Prolog.</figcaption>
+        </figure>
+</div>
+
+We have also prepared a presentation to present the work we have done and the things we want to do, which we will present on 18.04.2023. On that day, we will also show the sample code written in Prolog.
+
