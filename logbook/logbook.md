@@ -53,3 +53,13 @@ To begin, we declared the possible suspects, murder weapons, crime scenes, motiv
 Finally, we created the "start_game/0" predicate, which initiates the game by prompting the user to input the murder weapon, crime scene, motive, and day. Once the user has inputted their guesses, the "solve_murder" predicate is called to check whether the user's answers are correct. If so, the game ends and the user is congratulated.
 
 For next week, We are looking forward to continuing to develop this game and exploring more ways to make it even more engaging and challenging. We are considering implementing our program recursively, which will enable the game to follow the clues and scenarios presented to the user. This recursive approach will add complexity to the game, making it even more educational.
+
+
+### (4th Week) 28.03.2023
+**Vahid Mousavinezhad**
+
+This week, we made an effort to replace our previous approach with a new method. Specifically, we aimed to transform our program from a fact-based system to one that utilizes logical inference. We realized that our initial version did not meet our expectations, and this may be due to the fact that the necessary conditions for building our game were not addressed in the initial explanation.
+
+To gain inspiration and ideas for solving puzzles in Prolog, we have been exploring existing examples of puzzle-solving in the language. This has helped us gain a deeper understanding of how to apply logical inference to our game and has given us new ideas on how to create a more challenging and engaging experience for players.
+
+By doing so, we hope to present a better approach in the upcoming week. We are committed to improving our Murder Mystery Project in Prolog Programming and look forward to overcoming any obstacles along the way.
