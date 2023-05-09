@@ -104,7 +104,7 @@ We have also prepared a presentation to present the work we have done and the th
 
 
 ### (7th Week) 25.04.2023
-**Seyedvahid Mousavinezhad**
+**Vahid Mousavinezhad**
 
 On April 18th, we unveiled our idea for an interactive game during a presentation. However, feedback from Prof. Buchs and Dr. Morard indicated that implementing player interaction may not be feasible. As a result, we made the decision to shift our focus towards creating a real prototype of the game using Prolog. This week, we diligently worked on developing the first version of the game, specifically targeting the easy difficulty level. Although the prototype was relatively simple, it effectively showcased the core gameplay mechanics, allowing us to gather valuable feedback for future improvements and refinements.
 
@@ -121,7 +121,7 @@ We look forward to using the feedback will receive to iterate and improve upon o
 
 
 ### (8th Week) 02.05.2023
-**Seyedvahid Mousavinezhad**
+**Vahid Mousavinezhad**
 
 During the past week, we made notable progress and finally unveiled the first version of our game, which was met with positive feedback.
 
