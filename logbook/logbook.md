@@ -102,3 +102,20 @@ Furthermore, based on feedback from Prof. Buchs and Dr. Morard regarding the int
 
 We have also prepared a presentation to present the work we have done and the things we want to do, which we will present on 18.04.2023. On that day, we will also show the sample code written in Prolog.
 
+
+### (7th Week) 25.04.2023
+**Seyedvahid Mousavinezhad**
+
+On April 18th, we unveiled our idea for an interactive game during a presentation. However, feedback from Prof. Buchs and Dr. Morard indicated that implementing player interaction may not be feasible. As a result, we made the decision to shift our focus towards creating a real prototype of the game using Prolog. This week, we diligently worked on developing the first version of the game, specifically targeting the easy difficulty level. Although the prototype was relatively simple, it effectively showcased the core gameplay mechanics, allowing us to gather valuable feedback for future improvements and refinements.
+
+<div style="align-items:center">
+        <figure>
+            <img src="logbook/images/user2.png" alt="alt text" width="" height="150" align="Center">
+            <figcaption>Fig3. It is the first version of Detective Prolog in SWI-Prolog. It demonstrates the interactive aspect with players.</figcaption>
+        </figure>
+</div>
+
+As you can see in the image, players respond to questions based on the list of suspects, facts, and provided clues, and in the end, their score is displayed based on the correctness of their guesses. In this part of the project, scoring based on players' guesses has been the challenging aspect of our project up to this point.
+
+We look forward to using the feedback will receive to iterate and improve upon our prototype as we continue to refine our game concept. We are ready to iterate upon our prototype and expand the game to encompass higher difficulty levels. Our goal is to transform our concept into a fully realized game that captivates and engages players.
+
