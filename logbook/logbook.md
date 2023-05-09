@@ -111,7 +111,7 @@ On April 18th, we unveiled our idea for an interactive game during a presentatio
 <div style="align-items:center">
         <figure>
             <img src="logbook/images/user2.png" alt="alt text" width="" height="150" align="Center">
-            <figcaption>Fig3. It is the first version of Detective Prolog in SWI-Prolog. It demonstrates the interactive aspect with players.</figcaption>
+            <figcaption>Fig4. It is the first version of Detective Prolog in SWI-Prolog. It demonstrates the interactive aspect with players.</figcaption>
         </figure>
 </div>
 
@@ -119,3 +119,14 @@ As you can see in the image, players respond to questions based on the list of s
 
 We look forward to using the feedback will receive to iterate and improve upon our prototype as we continue to refine our game concept. We are ready to iterate upon our prototype and expand the game to encompass higher difficulty levels. Our goal is to transform our concept into a fully realized game that captivates and engages players.
 
+
+### (8th Week) 02.05.2023
+**Seyedvahid Mousavinezhad**
+
+During the past week, we made notable progress and finally unveiled the first version of our game, which was met with positive feedback.
+
+Building upon this success, our supervisors encouraged us to amplify the level of player interaction, allowing for additional guessing opportunities to rectify any incorrect answers and ultimately guide players towards the correct solutions. In response to this challenge, we wholeheartedly dedicated our efforts throughout the week to tackle this important aspect. A pivotal step in this endeavor was the integration of a helpful hint feature within the game, effectively illuminating which answers provided by players were accurate and which ones missed the mark.
+
+Additionally, we also began working on the advanced difficulty level and exploring potential scenarios for our game. We understand the importance and complexity of this phase, as it requires thorough consideration and precise execution to deliver a high-quality experience. We recognize the need for extra time and attention to ensure that our game provides an immersive and captivating experience for our players.
+
+Looking ahead, we are hopeful that we will reach a definitive conclusion for the final scenario idea. Furthermore, we are committed to further refining the player interaction component, striving to provide an immersive and captivating experience that fully embodies our vision for the game.
