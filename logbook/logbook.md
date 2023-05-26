@@ -149,3 +149,37 @@ Therefore, this week we worked on this aspect of our game and successfully added
 </div>
 
 For the upcoming week, our plan is to start working on the third scenario and make changes to the game's scoring system.
+
+
+
+### (10th Week) 16.05.2023
+**Seyedvahid Mousavinezhad**
+
+This week, our main focus was on implementing the scoring mechanism based on the player's answers in various attempts. The implementation of this game component proved to be quite challenging, but through extensive research, we were able to achieve the desired outcome.
+
+<div style="align-items:center">
+        <figure>
+            <img src="logbook/images/guess.jpg" alt="alt text" width="" height="150" align="Center">
+            <figcaption>Fig6. It is the third version of Detective Prolog in SWI-Prolog. It demonstrates the scoring mechanism based on the player's answers in various attempts.</figcaption>
+        </figure>
+</div>
+
+We defined a dynamic variable for the initial score, which deducts 5 points for every incorrect guess. Additionally, we defined another dynamic variable that exits the loop and reaches the last guess, which is the name of the killer, in case all the questions are answered correctly.
+
+<div style="align-items:center">
+        <figure>
+            <img src="logbook/images/dynamic_var.jpg" alt="alt text" width="500" height="50" align="Center">
+            <figcaption>Fig7. Defenition of dynamic variables.</figcaption>
+        </figure>
+</div>
+
+In addition to working on the scoring system, we also brainstormed the third game scenario this week. We are hopeful that we can successfully implement it and meet the deadline.
+
+<div style="align-items:center">
+        <figure>
+            <img src="logbook/images/point_reduce.jpg" alt="alt text" width="" height="100" align="Center">
+            <figcaption>Fig8. Prolog code that demonstrates the mechanism of reducing the score after each wrong guess.</figcaption>
+        </figure>
+</div>
+
+For the upcoming week, our plan is to work on the third scenario and address any existing issues with the scoring component. We aim to refine the scoring mechanism to ensure accuracy and smooth gameplay.
