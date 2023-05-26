@@ -130,3 +130,22 @@ Building upon this success, our supervisors encouraged us to amplify the level o
 Additionally, we also began working on the advanced difficulty level and exploring potential scenarios for our game. We understand the importance and complexity of this phase, as it requires thorough consideration and precise execution to deliver a high-quality experience. We recognize the need for extra time and attention to ensure that our game provides an immersive and captivating experience for our players.
 
 Looking ahead, we are hopeful that we will reach a definitive conclusion for the final scenario idea. Furthermore, we are committed to further refining the player interaction component, striving to provide an immersive and captivating experience that fully embodies our vision for the game.
+
+
+### (9th Week) 09.05.2023
+**Zahra Jaleh**
+
+At the beginning of this week, we conducted a presentation and explained the progress of our project. We received positive feedback, and the first version of our game was able to capture the attention of the audience.
+
+Professor Buchs proposed an idea to add to the game, which is to show the player a Prolog code in the "hints" section when they make a correct guess. This addition aims to incorporate an educational aspect into our game by teaching the players how to write Prolog rules while they play.
+
+Therefore, this week we worked on this aspect of our game and successfully added this feature. We also finalized our second scenario and completed the Prolog programming. In the second scenario, we increased the difficulty level of the game by adding more elements for the player to guess.
+
+<div style="align-items:center">
+        <figure>
+            <img src="logbook/images/idea_show_rule.jpg" alt="alt text" width="" height="150" align="Center">
+            <figcaption>Fig5. It is the second version of Detective Prolog in SWI-Prolog. It demonstrates how to show the player a Prolog code in the "hints" section when they make a correct guess.</figcaption>
+        </figure>
+</div>
+
+For the upcoming week, our plan is to start working on the third scenario and make changes to the game's scoring system.
