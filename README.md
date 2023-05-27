@@ -124,3 +124,25 @@ crime_place(X, S) :- suspect(X), kills_in(X, S), \+ S = kitchen, \+ S = bedroom,
 ```
 
 
+### How does Prolog solve the mystery?
+Using the defined rules for each scenario, we can use Prolog to deduce the identity of the murderer. By writing a predicate and querying it, Prolog will provide us with the exact evidence related to the crime and reveal the identity of murderer. Let's look at an example in SWISH:
+
+```prolog
+% Solve the murder mystery
+solve_murderer(X, Y, Z, O, P, Q):- 
+    crime_place(X, Y), crime_weapon(X, Z, _), has_jewelry(X, _, Q), motive_crime(X, O), date(X, _, P), 
+    write("These are the the correct answers provided by Detective Prolog:"),nl,
+    write("Murderer is: "), write(X), nl,
+    write("Place of crime is: "), write(Y), nl,
+    write("Weapon used in crime is: "), write(Z), nl,
+    write("Murderer wears a: "), write(Q), nl,
+    write("Murderer's motive is: "), write(O), nl,
+    write("Date of the crime is: "), write(P), nl.
+```
+
+<div style="align-items:center">
+        <figure>
+            <img src="images/swish_reasoning.jpg" alt="alt text" width="" height="300" align="Center">
+            <figcaption>Fig1. Swish UI and the Prolog deductions. </figcaption>
+        </figure>
+</div>
