@@ -36,10 +36,13 @@ Women:
 6. SMOKE: Pipe, Grass, Cigarette
 7. HAIR COLOR: Black, Brown, Blonde
 
+We perform Prolog programming in SWISH (SWI-Prolog for SHaring), a web-based integrated development environment (IDE) specifically designed for Prolog programming. SWISH offers a convenient platform for writing, testing, and sharing Prolog code through a web browser interface.
+
 
 #### What is Prolog?
 
 Prolog is a logic programming language that operates based on a declarative approach, emphasizing the description of relationships and logical rules rather than explicit instructions. It allows users to define facts and rules and then query them to obtain logical deductions. Prolog programs consist of a knowledge base containing facts and rules, and queries are posed to the system to infer logical conclusions. It uses a form of automated reasoning called resolution to perform logical inference. Prolog's key strength lies in its ability to solve problems using logical and constraint-based methods
+
 
 #### How are facts defined in Prolog?
 
@@ -76,4 +79,48 @@ has_weapon(green, candlestick).
 has_weapon(rihanna, pistol).
 
 ```
+
+#### What is the rule in Prolog?
+
+In Prolog, rules are used to define relationships between entities and to establish logical connections. They consist of a head and a body, separated by the ":-" operator. The head represents the goal or the conclusion, while the body contains the conditions or the premises that need to be satisfied for the rule to be true. Rules can also have multiple conditions in the body, connected by commas (",") to express logical conjunction.
+
+In order to uncover the identity of a murderer, we analyze each crime scenario and develop additional rules that enable Prolog to deduce the murderer. However, before diving into these rules, let's discuss an essential Prolog operator called the negation opernad (/+).
+
+
+#### What is "/+" operand?
+
+Prolog employs a backward-chaining algorithm to explore its knowledge base, which consists of facts and rules, in order to find answers to queries. The negation operator (/+) plays a significant role in Prolog as it allows for non-monotonic reasoning. This means that Prolog can draw conclusions that may be contradicted or invalidated by new information.
+
+The negation operator enables Prolog to reason with incomplete or uncertain data, which greatly enhances its problem-solving capabilities. By utilizing negation, Prolog becomes a powerful tool for tackling puzzles and resolving complex mysteries, such as identifying the perpetrator of a crime.
+
+
+```prolog
+% Declare the suspects
+suspect(X):- man(X); woman(X), \+ victim(X).
+```
+
+It means the suspect could be a man or(;) a woman who is not the victim.In the following, we you can see various clues and their corresponding rules. Each clue pertains to a specific element of the murder mystery, such as the motive, the weapon,...
+
+
+**Clue1:**
+"Police found victim's body on Saturday morning and doctor declare the crime happened about 12 hours ago."
+```prolog
+% Declare the date of crime
+date(X) :- day(X), \+ X = saturday, \+ X = sunday.
+```
+
+**Clue2:**
+"The police have found a black hair under the victim's fingernail, which belongs to the murderer. Additionally, they have also found a piece of jewelry in the victim's fist that does not belong to him. Can you guess the jewelry?"
+```prolog
+% Declare the new list of the suspect based on the fact that suspect was black and has a jewelry
+has_jewelry(X, Y, Z) :- suspect(X), hair_color(X, Y), jewelry(X, Z), \+ Y = blonde, \+ Y = brown.
+```
+
+**Clue3:**
+"Mr. Snoop's body was found by his maid. Considering that the maid only has access to the outdoor area, can you guess the location of the murder?"
+```prolog
+% Declare the victim found outside the house
+crime_place(X, S) :- suspect(X), kills_in(X, S), \+ S = kitchen, \+ S = bedroom, \+ S = library.
+```
+
 
