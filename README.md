@@ -84,10 +84,10 @@ has_weapon(rihanna, pistol).
 
 In Prolog, rules are used to define relationships between entities and to establish logical connections. They consist of a head and a body, separated by the ":-" operator. The head represents the goal or the conclusion, while the body contains the conditions or the premises that need to be satisfied for the rule to be true. Rules can also have multiple conditions in the body, connected by commas (",") to express logical conjunction.
 
-In order to uncover the identity of a murderer, we analyze each crime scenario and develop additional rules that enable Prolog to deduce the murderer. However, before diving into these rules, let's discuss an essential Prolog operator called the negation opernad (/+).
+In order to uncover the identity of a murderer, we analyze each crime scenario and develop additional rules that enable Prolog to deduce the murderer. However, before diving into these rules, let's discuss an essential Prolog operator called the negation opernad (\+).
 
 
-### What is "/+" operand?
+### What is "\+" operand?
 
 Prolog employs a backward-chaining algorithm to explore its knowledge base, which consists of facts and rules, in order to find answers to queries. The negation operator (/+) plays a significant role in Prolog as it allows for non-monotonic reasoning. This means that Prolog can draw conclusions that may be contradicted or invalidated by new information.
 
