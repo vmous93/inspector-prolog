@@ -8,7 +8,7 @@ We utilize Prolog to provide clues that aid in deducing which suspect is the mur
 
 Additionally, the game involves user interactions and employs Prolog to verify user inputs against actual scripts, determining the accuracy of their answers.
 
-### PROJECT DESCRIPTION
+## PROJECT DESCRIPTION
 
 A murder mystery game where the player, assumed to be a detective, tries to solve a murder by entering the murder weapon, location, day, motive, and suspect. The program uses a set of rules to determine which suspect committed the crime based on the entered information and check with the player’s guess. Clues and scenarios should be carefully chosen to ensure that they are relevant to the story and that they help the player to solve the murder.
 
@@ -39,12 +39,12 @@ Women:
 We perform Prolog programming in SWISH (SWI-Prolog for SHaring), a web-based integrated development environment (IDE) specifically designed for Prolog programming. SWISH offers a convenient platform for writing, testing, and sharing Prolog code through a web browser interface.
 
 
-#### What is Prolog?
+### What is Prolog?
 
 Prolog is a logic programming language that operates based on a declarative approach, emphasizing the description of relationships and logical rules rather than explicit instructions. It allows users to define facts and rules and then query them to obtain logical deductions. Prolog programs consist of a knowledge base containing facts and rules, and queries are posed to the system to infer logical conclusions. It uses a form of automated reasoning called resolution to perform logical inference. Prolog's key strength lies in its ability to solve problems using logical and constraint-based methods
 
 
-#### How are facts defined in Prolog?
+### How are facts defined in Prolog?
 
 In Prolog, facts are simple statements that represent true information about something. They consist of a predicate and its arguments, describing a relationship or property. Facts serve as the fundamental pieces of knowledge in Prolog, forming the basis for logical deductions and reasoning in the program.
 
@@ -80,14 +80,14 @@ has_weapon(rihanna, pistol).
 
 ```
 
-#### What is the rule in Prolog?
+### What is the rule in Prolog?
 
 In Prolog, rules are used to define relationships between entities and to establish logical connections. They consist of a head and a body, separated by the ":-" operator. The head represents the goal or the conclusion, while the body contains the conditions or the premises that need to be satisfied for the rule to be true. Rules can also have multiple conditions in the body, connected by commas (",") to express logical conjunction.
 
 In order to uncover the identity of a murderer, we analyze each crime scenario and develop additional rules that enable Prolog to deduce the murderer. However, before diving into these rules, let's discuss an essential Prolog operator called the negation opernad (/+).
 
 
-#### What is "/+" operand?
+### What is "/+" operand?
 
 Prolog employs a backward-chaining algorithm to explore its knowledge base, which consists of facts and rules, in order to find answers to queries. The negation operator (/+) plays a significant role in Prolog as it allows for non-monotonic reasoning. This means that Prolog can draw conclusions that may be contradicted or invalidated by new information.
 
