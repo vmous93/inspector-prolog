@@ -183,3 +183,18 @@ In addition to working on the scoring system, we also brainstormed the third gam
 </div>
 
 For the upcoming week, our plan is to work on the third scenario and address any existing issues with the scoring component. We aim to refine the scoring mechanism to ensure accuracy and smooth gameplay.
+
+
+
+### (11th Week) 23.05.2023
+**Zahra Jaleh**
+
+This past week, we completed the implementation of the third difficulty level of our game. We are delighted to report that all the existing bugs have been resolved, resulting in a highly polished and functional game.
+
+We are very happy and satisfied with the outcome of our work because we were able to fulfill all the expected requirements ahead of the deadline.
+
+Our game has become an interactive experience for the players, and we have developed it in two versions. In one of the versions, the player can also view the Prolog code based on their guesses, adding an educational aspect to the game.
+
+In the upcoming week, we will focus on writing the second scenario for each difficulty level of the game. Our goal is to reach a total of six playable scenarios (two for each difficulty level).
+
+Furthermore, we will also work on the project description on GitLab and prepare the final presentation slides.
