@@ -211,3 +211,7 @@ You can find the playable and final version codes of Detective Prolog in the "[*
 The game is also designed in two versions. The difference between these two versions lies in the hints section. In one of the versions, which is named "rules," the player can view the Prolog code written for that particular evidence. This aspect increases the educational aspect of the game.
 
 We hope you enjoy playing the game and that we have been able to introduce useful aspects of Prolog programming to you.
+
+## Resources
+- ["The power of Prolog" by Markus Triska](https://www.metalevel.at/prolog)
+- ["Learn Prolog Now!" by Patrick Blackburn, Johan Bos, and Kristina Striegnitz](https://doc.lagout.org/programmation/Prolog/Learn%20Prolog%20Now%21%20-%20Patrick%20Blackburn%2C%20Johan%20Bos%20%2C%20Kristina%20Striegnitz.pdf)
