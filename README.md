@@ -161,7 +161,7 @@ As mentioned earlier, our game incorporates user interactions and utilizes Prolo
 </div>
 
 
-### Loop in Prolog using "repeat" operand:
+### Loop in Prolog using "repeat" operand
 
 As you can observe, we need a loop in which players can refine their answers. In Prolog, the **repeat** predicate is used to create an infinite loop. It will repeatedly backtrack and re-evaluate the goals specified after it. The **repeat** predicate has no arguments and always succeeds, allowing you to create a loop that continues indefinitely until a specific condition is met or until the program is interrupted. We defined a dynamic variable for the initial score, which deducts 5 points for every incorrect guess. Additionally, we defined another dynamic variable that exits the loop and reaches the last guess, which is the name of the killer, in case all the questions are answered correctly. The loop is terminated using the "**!**" cut operator, which prevents backtracking and ensures the loop exits. Otherwise, the loop continues by backtracking to the repeat predicate, prompting for input again.
 
@@ -191,3 +191,23 @@ initialize_p,
       write('Your point = '), write(P), nl, nl,
  	  (P =< 0, write(" >>>  Game over!  <<< "),nl ; U > 0), !,
 ```
+
+### Detective Prolog Game
+
+You can find the playable and final version codes of Detective Prolog in the "[**game**](https://gitlab.unige.ch/Seyedvahid.Mousavinezhad/inspector-prolog/-/tree/main/game)" folder. The game is designed with three levels of difficulty, and their differences in difficulty are as follows:
+
+**Level 1:**
+- The player needs to correctly guess 4 clues to have the final guess for the killer's identity.
+- Based on the answers, the player receives hints indicating which answers are correct.
+
+**Level 2:**
+- The player needs to correctly guess 5 clues to have the final guess for the killer's identity.
+- Based on the answers, the player receives hints indicating which answers are correct.
+
+**Level 3:**
+- The player needs to correctly guess 5 clues to have the final guess for the killer's identity.
+- Based on the answers, the player receives hints indicating which answer is correct and which one is wrong. For instance, if the player has two correct answers, they will be informed about one answer being correct and one answer being wrong.
+
+The game is also designed in two versions. The difference between these two versions lies in the hints section. In one of the versions, which is named "rules," the player can view the Prolog code written for that particular evidence. This aspect increases the educational aspect of the game.
+
+We hope you enjoy playing the game and that we have been able to introduce useful aspects of Prolog programming to you.
