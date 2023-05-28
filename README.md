@@ -194,18 +194,18 @@ initialize_p,
 
 ### Detective Prolog Game
 
-You can find the playable and final version codes of Detective Prolog in the "[**game**](https://gitlab.unige.ch/Seyedvahid.Mousavinezhad/inspector-prolog/-/tree/main/game)" folder. The game is designed with three levels of difficulty, and their differences in difficulty are as follows:
+You can find the playable and final version codes of Detective Prolog in the [**game**](https://gitlab.unige.ch/Seyedvahid.Mousavinezhad/inspector-prolog/-/tree/main/game) directory. The game is designed with three levels of difficulty, and their differences in difficulty are as follows:
 
 **Level 1:**
-- The player needs to correctly guess 4 clues to have the final guess for the killer's identity.
+- The player needs to correctly guess 4 clues to have the final guess for the murderer's identity.
 - Based on the answers, the player receives hints indicating which answers are correct.
 
 **Level 2:**
-- The player needs to correctly guess 5 clues to have the final guess for the killer's identity.
+- The player needs to correctly guess 5 clues to have the final guess for the murderer's identity.
 - Based on the answers, the player receives hints indicating which answers are correct.
 
 **Level 3:**
-- The player needs to correctly guess 5 clues to have the final guess for the killer's identity.
+- The player needs to correctly guess 5 clues to have the final guess for the murderer's identity.
 - Based on the answers, the player receives hints indicating which answer is correct and which one is wrong. For instance, if the player has two correct answers, they will be informed about one answer being correct and one answer being wrong.
 
 The game is also designed in two versions. The difference between these two versions lies in the hints section. In one of the versions, which is named "rules," the player can view the Prolog code written for that particular evidence. This aspect increases the educational aspect of the game.
