@@ -153,7 +153,7 @@ For the upcoming week, our plan is to start working on the third scenario and ma
 
 
 ### (10th Week) 16.05.2023
-**Seyedvahid Mousavinezhad**
+**Vahid Mousavinezhad**
 
 This week, our main focus was on implementing the scoring mechanism based on the player's answers in various attempts. The implementation of this game component proved to be quite challenging, but through extensive research, we were able to achieve the desired outcome.
 
