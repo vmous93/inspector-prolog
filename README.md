@@ -1,6 +1,6 @@
 #### Group Members: Zahra Jaleh & Vahid Mousavinezhad
 
-# INSPECTOR PROLOG
+# Detective PROLOG
 
 The goal of this project is to create an educational game based on logic programming. The idea is to find out who the murderer is using a list of facts, in the manner of a detective at a crime scene. We need to create a set of rules to gather evidence and assist users in tracking down the murderer.
 
@@ -142,7 +142,20 @@ solve_murderer(X, Y, Z, O, P, Q):-
 
 <div style="align-items:center">
         <figure>
-            <img src="images/swish_reasoning.jpg" alt="alt text" width="" height="300" align="Center">
+            <img src="images/swish_reasoning.jpg" alt="alt text" width="" height="250" align="Center">
             <figcaption>Fig1. Swish UI and the Prolog deductions. </figcaption>
+        </figure>
+</div>
+
+
+
+### How does the game interact with the player?
+
+As mentioned earlier, our game incorporates user interactions and utilizes Prolog to validate user inputs by comparing them against actual scripts to assess the accuracy of their answers. Figure 2 provides a visual representation of the mechanism employed in our game. At the beginning of the game, we present all the facts to the player. Then, the player carefully examines the given clues, such as the location and day of the crime, and makes corresponding guesses. We have established a maximum score of 100, and for each incorrect answer, 5 points are deducted. If the player fails to answer all the questions correctly, they have the opportunity to try again. However, if the player's score falls below 0 due to incorrect answers, it's game over. On the other hand, if the player successfully answers all the questions, they can proceed to make their final guess, which involves identifying the killer's identity. In the end, the player will be able to view their final score along with the correct answers provided by Prolog.
+
+<div style="align-items:center">
+        <figure>
+            <img src="images/mechanism.png" alt="alt text" width="" height="500" align="Center">
+            <figcaption>Fig2. The interactive mechanism of the Detective Prolog game with the player. </figcaption>
         </figure>
 </div>
