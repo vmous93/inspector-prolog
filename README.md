@@ -1,6 +1,6 @@
 #### Group Members: Zahra Jaleh & Vahid Mousavinezhad
 
-# Detective PROLOG
+# DETECTIVE PROLOG
 
 The goal of this project is to create an educational game based on logic programming. The idea is to find out who the murderer is using a list of facts, in the manner of a detective at a crime scene. We need to create a set of rules to gather evidence and assist users in tracking down the murderer.
 
@@ -82,14 +82,14 @@ has_weapon(rihanna, pistol).
 
 ### What is the rule in Prolog?
 
-In Prolog, rules are used to define relationships between entities and to establish logical connections. They consist of a head and a body, separated by the ":-" operator. The head represents the goal or the conclusion, while the body contains the conditions or the premises that need to be satisfied for the rule to be true. Rules can also have multiple conditions in the body, connected by commas (",") to express logical conjunction.
+In Prolog, rules are used to define relationships between entities and to establish logical connections. They consist of a head and a body, separated by the "**:-**" operator. The head represents the goal or the conclusion, while the body contains the conditions or the premises that need to be satisfied for the rule to be true. Rules can also have multiple conditions in the body, connected by commas ("**,**") to express logical conjunction.
 
-In order to uncover the identity of a murderer, we analyze each crime scenario and develop additional rules that enable Prolog to deduce the murderer. However, before diving into these rules, let's discuss an essential Prolog operator called the negation opernad (\\+).
+In order to uncover the identity of a murderer, we analyze each crime scenario and develop additional rules that enable Prolog to deduce the murderer. However, before diving into these rules, let's discuss an essential Prolog operator called the negation opernad (**\\+**).
 
 
 ### What is "\\+" operand?
 
-Prolog employs a backward-chaining algorithm to explore its knowledge base, which consists of facts and rules, in order to find answers to queries. The negation operator (/+) plays a significant role in Prolog as it allows for non-monotonic reasoning. This means that Prolog can draw conclusions that may be contradicted or invalidated by new information.
+Prolog employs a backward-chaining algorithm to explore its knowledge base, which consists of facts and rules, in order to find answers to queries. The negation operator (**\\+**) plays a significant role in Prolog as it allows for non-monotonic reasoning. This means that Prolog can draw conclusions that may be contradicted or invalidated by new information.
 
 The negation operator enables Prolog to reason with incomplete or uncertain data, which greatly enhances its problem-solving capabilities. By utilizing negation, Prolog becomes a powerful tool for tackling puzzles and resolving complex mysteries, such as identifying the perpetrator of a crime.
 
@@ -159,3 +159,35 @@ As mentioned earlier, our game incorporates user interactions and utilizes Prolo
             <figcaption>Fig2. The interactive mechanism of the Detective Prolog game with the player. </figcaption>
         </figure>
 </div>
+
+
+### Loop in Prolog using "repeat" operand:
+
+As you can observe, we need a loop in which players can refine their answers. In Prolog, the **repeat** predicate is used to create an infinite loop. It will repeatedly backtrack and re-evaluate the goals specified after it. The **repeat** predicate has no arguments and always succeeds, allowing you to create a loop that continues indefinitely until a specific condition is met or until the program is interrupted. We defined a dynamic variable for the initial score, which deducts 5 points for every incorrect guess. Additionally, we defined another dynamic variable that exits the loop and reaches the last guess, which is the name of the killer, in case all the questions are answered correctly. The loop is terminated using the "**!**" cut operator, which prevents backtracking and ensures the loop exits. Otherwise, the loop continues by backtracking to the repeat predicate, prompting for input again.
+
+```prolog
+:- dynamic u/1. initialize_u :- retractall(u(_)), assert(u(0)). 
+:- dynamic p/1. initialize_p :- retractall(p(_)), assert(p(100)).
+
+check(H, I, J, K, L) :- H \= garden, I \= heritage, J \= pistol, K \= earring, L \= sunday, write('Correct answers = 0'),nl, 
+    write('Hint! Place is garden!'),nl, write('Try again and refine your answers'),
+    retract(p(OldValue)), NewValue is OldValue - 25, assert(p(NewValue)),nl, nl.
+
+% check predicate for all the other conditions
+...
+
+check(H, I, J, K, L) :- H = garden, I = heritage, J = pistol, K = earring, L = sunday, 
+    write('Congratulations!! You answered all the questions correctly.'),nl,
+    retract(u(OldValue)), NewValue is OldValue + 1, assert(u(NewValue)), nl,nl.
+
+initialize_p,
+    repeat,
+      initialize_u,
+      % Get the inputs A, B, C, D, E
+      ...
+      check(A, B, C, D, E),
+      u(U),
+      p(P),
+      write('Your point = '), write(P), nl, nl,
+ 	  (P =< 0, write(" >>>  Game over!  <<< "),nl ; U > 0), !,
+```
