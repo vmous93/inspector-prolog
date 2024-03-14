@@ -1,4 +1,4 @@
-#### Group Members: Zahra Jaleh & Vahid Mousavinezhad
+Zahra Jaleh & Vahid Mousavinezhad
 
 # DETECTIVE PROLOG
 
